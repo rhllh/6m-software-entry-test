@@ -6,10 +6,14 @@
     <title>Simple Addition Calculator</title>    
     <script type="text/javascript">
         function add(){
-            const num1 = document.querySelector("#num1").value;
-            const num2 = document.querySelector("#num2").value;
-            const answer = num1 + num2;
-            document.querySelector("#answer").innerText = answer;
+            const num1 = Number(document.querySelector("#num1").value);
+            const num2 = Number(document.querySelector("#num2").value);
+            if (isNaN(num1) || isNaN(num2)) {
+                alert("Error! One or more of your inputs is not a number.");
+            } else {
+                const answer = num1 + num2;
+                document.querySelector("#answer").innerText = answer;
+            }
         }
     </script>
 </head>
