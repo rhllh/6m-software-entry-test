@@ -12,16 +12,9 @@
 */
 
 function swap(x, y){
-    if (typeof x !== 'number' || typeof y !== 'number') {
-        return -1;
-    }
-    [x, y] = [y, x];
-
-    return [x, y];
+    // Task 1: Add code here
 }
 
 // Task 2: Add code here
-console.log(swap("Apple", 10));
-console.log(swap(9, 17));
 
 module.exports = swap;
